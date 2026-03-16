@@ -7,13 +7,15 @@ public class LevelManager : MonoBehaviour
 
     public float waitToRespawn;
 
-	void Awake()
-	{
-		instance = this;
-	}
+    public int gemsCollected;
 
-	// Start is called once before the first execution of Update after the MonoBehaviour is created
-	void Start()
+    void Awake()
+    {
+        instance = this;
+    }
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
     {
         
     }
@@ -21,7 +23,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void RespawnPlayer()

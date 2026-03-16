@@ -1,4 +1,3 @@
-using System.Numerics;
 using UnityEngine;
 
 public class CheckpointController : MonoBehaviour
@@ -7,7 +6,7 @@ public class CheckpointController : MonoBehaviour
 
     private Checkpoint[] checkpoints;
 
-    public UnityEngine.Vector3 spawnPoint;
+    public Vector3 spawnPoint;
 
     void Awake()
     {
@@ -35,7 +34,7 @@ public class CheckpointController : MonoBehaviour
         }
     }
 
-    public void SetSpawnPoint(UnityEngine.Vector3 newSpawnPoint)
+    public void SetSpawnPoint(Vector3 newSpawnPoint)
     {
         spawnPoint = newSpawnPoint;
     }
