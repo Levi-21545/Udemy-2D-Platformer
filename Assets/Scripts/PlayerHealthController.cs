@@ -11,6 +11,8 @@ public class PlayerHealthController : MonoBehaviour
 
     private SpriteRenderer theSR;
 
+    public GameObject deathEffect;
+
     private void Awake()
     {
         instance = this;
@@ -46,7 +48,8 @@ public class PlayerHealthController : MonoBehaviour
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
-                // gameObject.SetActive(false);
+
+                Instantiate(deathEffect, transform.position, deathEffect.transform.rotation);
                 LevelManager.instance.RespawnPlayer();
             }
             else

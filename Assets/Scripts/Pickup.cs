@@ -6,6 +6,8 @@ public class Pickup : MonoBehaviour
 
     private bool isColected;
 
+    public GameObject pickupEffect;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,6 +31,8 @@ public class Pickup : MonoBehaviour
                 isColected = true;
                 Destroy(gameObject);
 
+                Instantiate(pickupEffect, transform.position, pickupEffect.transform.rotation);
+
                 UIController.instance.UpdateGemCount();
             }
 
@@ -37,9 +41,11 @@ public class Pickup : MonoBehaviour
                 if (PlayerHealthController.instance.currentHealth != PlayerHealthController.instance.maxHealth)
                 {
                     PlayerHealthController.instance.HealPlayer();
-                    
+
                     isColected = true;
                     Destroy(gameObject);
+
+                    Instantiate(pickupEffect, transform.position, pickupEffect.transform.rotation);
                 }
 
             }
