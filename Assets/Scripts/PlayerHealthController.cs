@@ -51,6 +51,8 @@ public class PlayerHealthController : MonoBehaviour
 
                 Instantiate(deathEffect, transform.position, deathEffect.transform.rotation);
                 LevelManager.instance.RespawnPlayer();
+
+                AudioManager.instance.PlaySFX(7);
             }
             else
             {
@@ -58,6 +60,8 @@ public class PlayerHealthController : MonoBehaviour
                 theSR.color = new Color(theSR.color.r, theSR.color.g, theSR.color.b, .5f);
 
                 PlayerController.instance.KnockBack();
+
+                AudioManager.instance.PlaySFX(8);
             }
 
             UIController.instance.UpdateHealthDisplay();
