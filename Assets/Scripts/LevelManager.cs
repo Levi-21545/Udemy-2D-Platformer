@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class LevelManager : MonoBehaviour
     public float waitToRespawn;
 
     public int gemsCollected;
+
+    public string levelToTload;
 
     void Awake()
     {
@@ -46,5 +49,27 @@ public class LevelManager : MonoBehaviour
         UIController.instance.UpdateHealthDisplay();
 
         PlayerController.instance.gameObject.SetActive(true);
+    }
+
+    public void EndLevel()
+    {
+        StartCoroutine(EndLevelCo());
+    }
+
+    public IEnumerator EndLevelCo()
+    {
+        PlayerController.instance.stopInput = true;
+
+        CameraController.instance.stopFollow = true;
+
+        UIController.instance.levelCompleteText.SetActive(true);
+
+        yield return new WaitForSeconds(1.5f);
+
+        UIController.instance.FadeToBlack();
+
+        yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + .25f);
+
+        SceneManager.LoadScene(levelToTload);
     }
 }
