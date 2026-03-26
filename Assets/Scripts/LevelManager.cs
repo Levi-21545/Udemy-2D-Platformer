@@ -35,7 +35,11 @@ public class LevelManager : MonoBehaviour
     {
         PlayerController.instance.gameObject.SetActive(false);
 
-        yield return new WaitForSeconds(waitToRespawn);
+        yield return new WaitForSeconds(waitToRespawn - (1f / UIController.instance.fadeSpeed));
+        UIController.instance.FadeToBlack();
+
+        yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + .2f);
+        UIController.instance.FadeFromBlack();
 
         PlayerController.instance.transform.position = CheckpointController.instance.spawnPoint;
         PlayerHealthController.instance.currentHealth = PlayerHealthController.instance.maxHealth;
