@@ -648,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca87a3deb0f8e4011b9b67ea4622857d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
-  startScene: Level 1
+  startScene: Level Select
 --- !u!1 &1386201641
 GameObject:
   m_ObjectHideFlags: 0

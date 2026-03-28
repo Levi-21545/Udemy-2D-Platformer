@@ -1031,7 +1031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2529877269322119510, guid: d254ceaec77b44debb67192b766e0e83, type: 3}
       propertyPath: levelToTload
-      value: Level 2
+      value: Level Select
       objectReference: {fileID: 0}
     - target: {fileID: 4484802984193469205, guid: d254ceaec77b44debb67192b766e0e83, type: 3}
       propertyPath: m_LocalPosition.x
