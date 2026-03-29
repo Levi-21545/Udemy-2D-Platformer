@@ -112,4 +112,20 @@ public class PlayerController : MonoBehaviour
         theRB.linearVelocity = new Vector2(theRB.linearVelocity.x, bounceForce);
         AudioManager.instance.PlaySFX(10);
     }
+
+	private void OnCollisionEnter2D(Collision2D other)
+	{
+		if (other.gameObject.tag == "Platform")
+        {
+            transform.parent = other.transform;
+        }
+	}
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Platform")
+        {
+            transform.parent = null;
+        }
+    }
 }

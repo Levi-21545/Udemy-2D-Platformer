@@ -115,7 +115,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -877166209
-  m_SortingLayer: 1
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 497299451, guid: d0ff653f4b4d3f14dab1926a9ed3efb6, type: 3}
@@ -210,7 +210,11 @@ MonoBehaviour:
   groundCheckPoint: {fileID: 1015861342630520284}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1280
+  knockBackLength: 0
+  knockBackForce: 0
+  bounceForce: 0
+  stopInput: 0
 --- !u!95 &5200801623734707313
 Animator:
   serializedVersion: 7
@@ -247,3 +251,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealthController
   currentHealth: 0
   maxHealth: 3
+  invincibleLength: 0
+  deathEffect: {fileID: 0}

@@ -512,6 +512,7 @@ MonoBehaviour:
   waitToRespawn: 2
   gemsCollected: 0
   levelToTload: Main_Menu
+  timeInLevel: 0
 --- !u!1 &5585564042054283543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,7 +1510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daba1d5a411444b3ba5b67a0d05ed419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
-  levelSelect: 
+  levelSelect: Level Select
   mainMenu: Main_Menu
   pauseScreen: {fileID: 5585564042054283543}
   isPaused: 0
