@@ -16185,7 +16185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6656109046055020505, guid: 5f0c205f67f0649ddbd5b0a4cfb83427, type: 3}
       propertyPath: levelName
-      value: 
+      value: '3: The fall of the machine'
       objectReference: {fileID: 0}
     - target: {fileID: 6656109046055020505, guid: 5f0c205f67f0649ddbd5b0a4cfb83427, type: 3}
       propertyPath: totalGems
@@ -16193,11 +16193,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6656109046055020505, guid: 5f0c205f67f0649ddbd5b0a4cfb83427, type: 3}
       propertyPath: levelToLoad
-      value: 
+      value: Level Boss
       objectReference: {fileID: 0}
     - target: {fileID: 6656109046055020505, guid: 5f0c205f67f0649ddbd5b0a4cfb83427, type: 3}
       propertyPath: levelToCheck
-      value: 
+      value: Level 2
       objectReference: {fileID: 0}
     - target: {fileID: 7700511952418301518, guid: 5f0c205f67f0649ddbd5b0a4cfb83427, type: 3}
       propertyPath: m_Name

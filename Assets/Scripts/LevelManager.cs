@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
 
     public int gemsCollected;
 
-    public string levelToTload;
+    public string levelToLoad;
 
     public float timeInLevel;
 
@@ -101,6 +101,6 @@ public class LevelManager : MonoBehaviour
             PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name + "_time", timeInLevel);
         }
 
-        SceneManager.LoadScene(levelToTload);
+        SceneManager.LoadScene(levelToLoad);
     }
 }
