@@ -16185,7 +16185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6656109046055020505, guid: 5f0c205f67f0649ddbd5b0a4cfb83427, type: 3}
       propertyPath: levelName
-      value: '3: The fall of the machine'
+      value: '3: The Fall of the Machine'
       objectReference: {fileID: 0}
     - target: {fileID: 6656109046055020505, guid: 5f0c205f67f0649ddbd5b0a4cfb83427, type: 3}
       propertyPath: totalGems
